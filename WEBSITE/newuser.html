@@ -1,0 +1,112 @@
+<!doctype html>
+<html style="background-color:yellow;background-image:url('backgroundimage1.jpg');background-size:cover; background-repeat:no-repeat;">
+<head><title>NEW USER FORM</title>
+
+<style>
+div.a{
+	height:400px;
+	width:400px;
+	border:2px solid red;
+	padding-top:40px;
+	padding-botttom:20px;
+	padding-right:20px;
+	padding-left:20px;
+	margin-left:550px;
+	background-color:pink;}
+	</style>
+</head>
+<body>
+<h1 style="text-align:center;color:red;">NEW USER</h1>
+<form method="post" name="newuserform" onsubmit="return check()" action="read.php">
+<div class="a">
+<b>NAME:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" name="username" size="15" />
+<br /><br />
+<b>ADDRESS:</b><br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<textarea name="address" cols="30" rows="5"></textarea><br><br>
+<b>PHONE NUMBER:&nbsp&nbsp</b><input type="text" size="15" name="phone"/><br><br>
+<b>E-MAIL ID:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</b><input type="email" name="email" width="100px"/><br><br>
+<b>PASSWORD:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</b><input type="password" name="password"/><br><br>
+<p><b>Which category do you belong to?</b>
+<input type="radio" name="category" value="farmer" onclick="return check();" />Farmer
+<input type="radio" name="category" value="customer"/>Customer</p>
+<!--<input type="button" name="CONFIRM" value="confirm" >
+	kclds-->
+<input type="submit" name="submit" value="submit" >
+</div>
+</form>
+
+<script type="text/javascript" src="jsforform.js">
+</script>
+<!--<script>
+function check(){
+		
+		var name = document.forms["newuserform"]["username"].value;
+		var address = document.forms["newuserform"]["address"].value;
+		var phone = document.forms["newuserform"]["phone"].value;
+		var email = document.forms["newuserform"]["email"].value;
+		var pasword = document.forms["newuserform"]["password"].value;
+		var category = document.forms["newuserform"]["category"].value;
+		/*var number = document.forms["newuserform"]["number"].value;
+		var crops = document.forms["newuserform"]["crops"].value;
+		var yiel = document.forms["newuserform"]["yield"].value;*/
+		if(name == "")
+		{
+			alert("please enter your name");
+			//name.focus();
+			return false;
+		}
+		if(address == "")
+		{
+			alert("please enter the address");
+			//address.focus();
+			return false;
+		}
+		if(email == "")
+		{
+			alert("please enter an email address");
+			//email.focus();
+			return false;
+		}
+		
+		if(phone == "")
+		{
+			alert("please enter the phone number");
+			//phone.focus();
+			return false;
+		}
+		if(phone.length!=10)
+		{
+			alert("please ensure that your phone number has only 10 characters");
+			//phone.focus();
+			return false;
+		}
+		if(pasword == "")
+		{
+			alert("please enter your password");
+			//pasword.focus();
+			return false;
+		}
+		if(category=="farmer")
+		{ if(number == "")
+		{
+			alert("please fill in the acres box");
+			number.focus();
+			return false;
+		}
+		if(crops == "")
+		{
+			alert("please fill in the crops box"):
+			crops.focus();
+			return false;
+		}
+		if(yiel.value == "")
+		{
+			window.alert("please fill in the yield box");
+			yiel.focus();
+			return false;
+		}
+		}
+		return true;
+}
+</script>-->
+</body>
+</html>			

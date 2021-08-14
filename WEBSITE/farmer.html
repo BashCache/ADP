@@ -1,0 +1,35 @@
+<!doctype html>
+<html style="background-color:yellow">
+<head><title>FARMER'S FORM</title>
+
+<style>
+div.b{
+	height:660px;
+	width:400px;
+	border:2px solid red;
+	padding-top:40px;
+	padding-botttom:20px;
+	padding-right:20px;
+	padding-left:20px;
+	margin-left:550px;
+	background-color:pink;}
+</style>
+</head>
+<body>
+<h1 style="text-align:center;color:red">FARMER</h1>
+<form method="post" name="newuserform" onsubmit="return checkfile()" action="read.php">
+<div class="b">
+<b>How many acres do you own?&nbsp &nbsp </b> <input type="text" name="number" size="7" style="color:peach"/>
+<br><br>
+<b>A list of the crops cultivated:</b><br>
+&nbsp &nbsp &nbsp <textarea name="crops" cols="20" rows="15" style="margin-left:200px;"></textarea><br><br>
+<br><br>
+<b>Yield per hectare value of each crop:</b>
+&nbsp &nbsp &nbsp &nbsp <textarea name="yield" cols="20" rows="15" style="margin-left:200px;">
+</textarea><br>
+<input type="submit" value="submit" style="align:center"/>
+</div>
+</form>
+<script type="text/javascript" src="jsforform.js"></script>
+</body>
+</html>

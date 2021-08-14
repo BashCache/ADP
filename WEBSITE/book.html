@@ -1,0 +1,150 @@
+<!doctype>
+<html>
+<head>	
+	<title> LAND TO KITCHEN </title>
+	
+	<style>
+	html
+	{ //background-image:url('backgroundimage1.jpg'); background-size:cover; background-repeat:no-repeat;
+	  //opacity:20;
+	  //background-color:yellow;
+	  background-color: rgba(30,20,40,0.1);
+	  }
+	.FIXED
+	{ position: fixed;}
+	.NAVIGATION
+	{	//background-color: blue;
+		//position:fixed;
+		//height: 20px;
+		//text-indent:50px;
+		padding-top:25px;
+		padding-right:25px;
+	}
+	.NAVIGATION1
+	{	background-color: blue;
+		//position:fixed;
+		//height: 50px;
+		text-indent:50px;
+		padding-top:25px;
+		float:right;
+	}
+	.RIGHTSCROLL
+	{	font-size:20px;
+		font-style:italic;
+		//padding-top:100px;
+		font-weight:bold;
+		//width:300px;
+		//float:left;
+	}
+	.BRANCH
+	{	font-size: 30px;
+		color: orange;
+		width:300px;
+		padding-top:50px;
+	}
+	#right
+	{	float:right; }
+	.BORDER
+	{	border-top: 1px solid green; 
+		position:relative;
+	}
+	.BORDER1
+	{	height:83px;
+		border-top: 2px solid green;
+		position:fixed;
+	}
+	.CENTERBOX
+	{ 	float:left; }
+	/*.popup
+	{ 	position:relative;
+		display:inline-block;
+		cursor:pointer;
+		-webkit-user-select: none;
+		-moz-user-select:none;
+		-ms-user-select:none;
+		user-select:none;
+	}
+	.popup.show
+	{	visibility:visible;
+		-webkit-animation:fadeIn ls;
+		animation: fadeIn ls;
+	}*/
+	</STYLE>
+</head>
+<body>
+<header>
+<pre>
+<marquee style="font-family:MAGNETO;font-size:30px"> SLOGAN &nbsp MUST  &nbsp BE &nbsp INSERTED &nbsp HERE</marquee>
+</pre>
+	<!--<div class="BORDER"> -->
+	<div class="BORDER1">
+	<p></p>
+	<b class="FIXED">
+	<!--<nav class="NAVIGATION">-->
+	<a href="#home" target="_blank" style="color:white; padding:35px; text-decoration:none;background-color: blue;" > &nbsp HOME &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  |  </A>
+	<a href="#about" style="color:white; padding:35px; text-decoration:none;background-color: blue;"> ABOUT </a> 
+	<strong style="color:red;font-size:35px;float:none;padding-top:18px;border-top:1px solid green;border-bottom:1px solid green;padding-bottom:30px;background-color:yellow;">  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp LAND TO KITCHEN  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp </strong>
+	<!--&nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp-->
+	<a href="#logout" style="color:white; padding:35px;text-decoration:none;background-color:blue;text-align:center;" >  &nbsp LOGOUT &nbsp &nbsp &nbsp &nbsp  </a>
+	<!--</nav>--> 
+	</b>
+	</div>
+</header>
+<body>
+<div style="padding-top:130px;">
+</div>
+<img src="Carrot.jpg" alt="carrot" width="220px" height="250px" style="padding-left:20px"> </img>
+<img src="banana.jpg" alt="banana" width="220px" height="250px" style="padding-left:20px"> </img>
+<img src="potato.jpg" alt="potato" width="220px" height="250px" style="padding-left:20px"> </img>
+<img src="orange.jpg" alt="orange" width="220px" height="250px" style="padding-left:20px"> </img>
+<img src="tomato.jpg" alt="tomato" width="220px" height="250px" style="padding-left:20px"> </img>
+<div style="padding-top:25px;">
+</div>
+<form name="bookv" action="booking.php" method="post">
+	<span style="padding-left:20px">
+	CARROT: 1kg - Rs.50 &nbsp
+	<select name="carrot">
+		<option value="0">None</option>
+		<option value="0.5">0.5kg</option>
+		<option value="1">1kg</option>
+		<option value="1.5">1.5kg</option>
+		<option value="2">2kg</option>
+	</select>
+	
+	<span style="padding-left:15px"> BANANA: 1dozen-Rs.50 </span>
+	<select name="banana">
+		<option value="0">None</option>
+		<option value="0.5">1/2dozen</option>
+		<option value="1">1dozen</option>
+		<option value="2">2dozen</option>
+	</select>
+	
+	<span style="padding-left:10px"> POTATO: 1kg - Rs.30 </span>
+	<select name="potato">
+		<option value="0">None</option>
+		<option value="0.5">0.5kg</option>
+		<option value="1">1kg</option>
+		<option value="1.5">1.5kg</option>
+		<option value="2">2kg</option>
+	</select>
+	
+	<span style="padding-left:40px"> ORANGE: 1kg - Rs.100 </span>
+	<select name="orange">
+		<option value="0">None</option>
+		<option value="0.5">0.5kg</option>
+		<option value="1">1kg</option>
+		<option value="1.5">1.5kg</option>
+		<option value="2">2kg</option>
+	</select>
+	
+	<span style="padding-left:30px"> TOMATO: 1kg - Rs.30 </span>
+	<select name="tomato">
+		<option value="0">None</option>
+		<option value="0.5">0.5kg</option>
+		<option value="1">1kg</option>
+		<option value="1.5">1.5kg</option>
+		<option value="2">2kg</option>
+	</select>
+</form>
+</body>
+</html>

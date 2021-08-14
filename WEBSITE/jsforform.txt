@@ -1,0 +1,87 @@
+<script>
+function check(){
+		var name = document.forms["newuserform"]["username"];
+		var address = document.forms["newuserform"]["address"];
+		var phone = document.forms["newuserform"]["phone"];
+		var email = document.forms["newuserform"]["email"];
+		var pasword = document.forms["newuserform"]["password"];
+		var category = document.forms["newuserform"]["category"];
+		var number = document.forms["newuserform"]["number"];
+		var crops = document.forms["newuserform"]["crops"];
+		var yiel = document.forms["newuserform"]["yield"];
+		
+		if(name.value == "")
+		{
+			window.alert("please enter your name");
+			name.focus();
+			return false;
+		}
+		if(address.value == "")
+		{
+			window.alert("please enter the address");
+			address.focus();
+			return false;
+		}
+		if(email.value == "")
+		{
+			window.alert("please enter an email address");
+			email.focus();
+			return false;
+		}
+		if(email.value.indexOf("@",0)<0)
+		{
+			window.alert("please enter a valid email address");
+			email.focus();
+			return false;
+		}
+		if(email.value.indexOf(".",0)<0)
+		{
+			window.alert("please enter a valid email address");
+			email.focus();
+			return false;
+		}
+		if(phone.value == "")
+		{
+			window.alert("please enter the phone number");
+			phone.focus();
+			return false;
+		}
+		if(phone.value.length!=10)
+		{
+			window.alert("please ensure that your phone number has only 10 characters");
+			phone.focus();
+			return false;
+		}
+		if(pasword.value == "")
+		{
+			window.alert("please enter your password");
+			pasword.focus();
+			return false;
+		}
+		if(category.selectedIndex<1)
+		{
+			alert("please select an option");
+			category.focus();
+			return false;
+		}
+		if(number.value == "")
+		{
+			window.alert("please fill in the acres box");
+			number.focus();
+			return false;
+		}
+		if(crops.value == "")
+		{
+			window.alert("please fill in the crops box"):
+			crops.focus();
+			return false;
+		}
+		if(yiel.value == "")
+		{
+			window.alert("please fill in the yield box");
+			yiel.focus();
+			return false;
+		}
+		return true;
+}
+</script>
